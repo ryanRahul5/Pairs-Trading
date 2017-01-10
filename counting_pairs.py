@@ -34,7 +34,7 @@ wb_O = openpyxl.load_workbook('oct.xlsx')
 wb_N = openpyxl.load_workbook('nov.xlsx')
 wb_D = openpyxl.load_workbook('dec.xlsx')
 
-
+# Now pick up the industry you want to calculate the unique pairs for
 name = "Industrial-Goods-&-Services"
 
 # Checking for financial services
@@ -126,11 +126,9 @@ sum(1 for i in range(len(L)) if L[i:i+len(s)]==s)
 ##########
 
 
-## for counting unique element inside the list
-from collections import Counter
-Counter(L)
 
 ## counting unique list within list
+## which gives you total count for a unique pair
 Counter(str(e) for e in L)
 
 
